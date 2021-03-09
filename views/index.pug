@@ -1,0 +1,52 @@
+extends layout.pug
+block content
+
+    div.section.container
+        div.row
+            div.col.s12.m10.offset-m1
+                div.row
+
+                    div.col.s12.m4
+                        div.center.promo
+                            i(class="material-icons") flash_on
+                            p(class="promo-caption") Speeds up development
+                            p(class="light center") We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers
+
+
+                    div.col.s12.m4
+                        div.center.promo
+                            i(class="material-icons") group 
+                            p(class="promo-caption") Speeds up development
+                            p(class="light center") We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers
+
+
+                    div.col.s12.m4
+                        div.center.promo
+                            i(class="material-icons") settings 
+                            p(class="promo-caption") Speeds up development
+                            p(class="light center") We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers
+                
+                hr
+
+                form.col.s12
+                    div.row
+                        div.input-field.col.s12
+                            input(id="word_entry" onkeyup="search_word()" type="text" class="validate")
+                            label(for="word_entry") Enter The Word
+
+                ul.collection.with-header#table
+                    div.collection-header 
+                        h4.header_word WORD
+                        h4.header_meaning MEANING
+                        
+                    
+                    each meaning, word in meaning_data 
+                        ul.collection-item 
+                            li.collection_word #{word}
+                            .collection_splitter = 
+                            li.collection_meaning #{meaning} 
+
+                    
+
+
+
