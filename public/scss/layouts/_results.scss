@@ -1,0 +1,28 @@
+.collection-header {
+    display: flex;
+    color: $colour-2;
+    justify-content: space-between;
+}
+
+.collection-item {
+    color: #ee6e73;
+    display: flex;
+    justify-content: space-between;
+}
+
+.collection_splitter {
+    visibility: hidden;
+}
+
+.collection_word,
+.header_word {
+    width: 20%;
+    text-align: left;
+}
+
+.collection_meaning,
+.header_meaning
+{
+    width: 80%;
+    text-align: right;
+}
