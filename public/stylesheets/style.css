@@ -1,0 +1,61 @@
+/* ROOT */
+ /* #ee6e73; */
+
+
+/* Base */
+hr {
+    margin-bottom: 2rem;
+}
+
+body {
+    color: #616161;
+}
+
+
+/* HERO */
+.promo i {
+    margin: 40px 0;
+    color: #ee6e73;
+    font-size: 7rem;
+    display: block;
+}
+
+.promo-caption {
+    font-size: 1rem;
+    font-weight: 700;
+    /* TODO: change this to variable */
+    color: #ee6e73;
+}
+
+
+/* RESULTS */
+.collection-header {
+    /* TODO: change this to variable */
+    color: #ee6e73;
+    display: flex;
+    justify-content: space-between;
+}
+
+.collection-item {
+    color: #ee6e73;
+    display: flex;
+    justify-content: space-between;
+}
+
+.collection-item .collection_word,
+.collection-header .header_word
+{
+    width: 20%
+    text-align: left;
+}
+
+.collection-item .collection_splitter {
+    visibility: hidden;
+}
+
+.collection-item .collection_meaning,
+.collection-header .header_meaning
+{
+    width: 80%
+    text-align: right;
+}
