@@ -2,27 +2,46 @@
     display: flex;
     color: $colour-2;
     justify-content: space-between;
+
+    .header_word  {
+        text-align: left;
+        width: 20%;
+    }
+
+    .header_meaning {
+        text-align: left;
+        width: 80%;
+    }
 }
 
 .collection-item {
     color: #ee6e73;
     display: flex;
     justify-content: space-between;
-}
 
-.collection_splitter {
-    visibility: hidden;
-}
+    .collection_word {
+        width: 20%;
+        text-align: left;
+    }
 
-.collection_word,
-.header_word {
-    width: 20%;
-    text-align: left;
-}
+    .collection_splitter {
+        width: 5%;
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
 
-.collection_meaning,
-.header_meaning
-{
-    width: 80%;
-    text-align: right;
+    .collection_meaning {
+        width: 80%;
+        text-align: left;
+    }
+
+    .collection_word::first-letter {
+        font-weight: 700;
+        text-transform: capitalize;
+      }
+
+    .collection_meaning::first-letter {
+        font-weight: 500;
+        text-transform: capitalize;
+      }
 }
